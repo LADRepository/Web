@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>CrimeWatch</title>
+        <link rel="stylesheet" href="./CSS/crimewatch.css">
+        <link rel="stylesheet" href="./CSS/login.css">
+
+        <script rel="javascript" src="/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>  
+
+    </head>
+
+    <body>
+        
+        <nav class="navigation">
+
+            <a class="logo"><span style="background-color: red">Crⓘme</span>WⓐtⒸh</a>
+
+            <a href="#socials" class="pagename" data-link>Socials</a>
+            <a href="#crimefacts" class="pagename" data-link>Crime Facts</a>
+            <a href="#crimestats" class="pagename" data-link>Crime Stats</a>
+            <a href="#ourstory" class="pagename" data-link>Our Story</a>
+            <a href="#reglog" class="pagename" data-link>Register/Log-In</a>
+
+        </nav>
+
+        <div id="reglog"><!--Start Of Reg/Log-->
+
+            <div class="header">
+
+                <h1>Not With Us? Create An Account And Log-In.</h1>
+                <h2>Join Our Fight To Make London A Safer Place.</h2>
+
+            </div>
+
+            <div class="container">     <!--Registration & Login Form-->          
+
+                <div class="signup">Sign Up</div>
+                <div class="login">Log In</div>
+
+                <div class="signup-form"> <!--Registration Form-->
+
+                    <p id="signupdetails">
+            
+                        <a>Username:</a> 
+                        <input required  type="email" id="usernamefield">
+                        <a>Password:</a> 
+                        <input required type="password" id="passwordfield">
+            
+                        <button onclick="addUser()" id="usersignupbutton">Create Account</button>
+            
+                    </p>
+            
+            
+                </div>
+
+                <div class="login-form">                        
+                    <div id="userlogin">
+                            
+                        <p id="logindetails">
+                
+                            <a>Username:</a> 
+                            <input required  type="email" id="loginusernamefield">
+                            <a>Password:</a> 
+                            <input required type="password" id="loginpasswordfield">
+
+                            <button id="userloginbutton">Login</button>
+                                    
+                        </p>
+                            
+                    </div>
+                </div>
+                
+            </div>
+
+            <script>
+
+                $(document).ready(function(){
+                  $(".signup-form").hide();
+                  $(".signup").css("background", "none");
+              
+                  $(".login").click(function(){
+                    $(".signup-form").hide();
+                    $(".login-form").show();
+                    $(".signup").css("background", "none");
+                    $(".login").css("background", "#222121");
+                  });
+              
+                  $(".signup").click(function(){
+                    $(".signup-form").show();
+                    $(".login-form").hide();
+                    $(".login").css("background", "none");
+                    $(".signup").css("background", "#222121");
+                  });
+              
+                  $(".btn").click(function(){
+                    $(".input").val("");
+                  });
+                });
+            
+            </script>
+        
+        </div> <!--End of Reg/Log-->
+
+        <div id="ourstory">
+
+            <div class="header">
+
+                <h1>Our Story</h1>
+                <h2><i>"Part Of The journey is The End"</i> - Robert Downey Jr. as Tony Stark</h2>
+
+            </div>
+
+            <div class="content">
+
+                <p class="text2">
+                    There are numerous components which have added to the breakdown of peace and lawfulness in Britain today. From numerous points of view the police, the courts and the jail administration are essentially getting the bits of others' disappointments. 
+
+                    As a general public we are at risk for being invaded by values which destroy individuals' regard for themselves, one another, their homes and their area. 
+                    
+                    Generally harming of all has been the emotional decrease in moral duty. Numerous individuals currently accept that they are not, at this point entirely answerable for their activities. It's somebody else's, or something different's issue - the climate, society, the public authority. 
+                    
+                    Recall the lines from West Side Story, when the pack of hoods attempt to pardon their activities: "I'm corrupted because of I'm denied," says one. "Adolescent wrongdoing is simply a social sickness" says another. West Side Story may have been composed by an American at the last part of the 1950s, yet these perspectives are generally very pervasive in British society today. 
+                    
+                    These reasons move the equilibrium away from the yob, the shoplifter, the thrill seeker, the mugger, any lawbreaker, on to some other person or thing. What more destructive message could we send than to say: "It's not your shortcoming, it is society's deficiency"? 
+                    
+                    And keeping in mind that duty has declined, rights have multiplied. "I have my privileges" is what could be compared to two-fingers to power. There is presently a discernible feeling of shock that "purported" common liberties have influenced the equilibrium of equity for the crook and the miscreant - as opposed to the person in question and the law abider. 
+                    
+                    The decrease of duty and the expansion of rights have left us in a moral entanglement, which is subverting our battle against wrongdoing. The reasonable differentiation among good and bad has been lost in sociological drivel and PC hogwash. 
+                    
+                    Simply think about that express "against social conduct" which we hear so frequently today. Eighteen-year-olds out following a late evening's drinking, toppling litter receptacles, pushing each other around, scaring others - in my language, that conduct isn't simply hostile to social - it's off-base. Indeed: it's off-base. What's more, individuals shouldn't be permitted to pull off it. 
+                    
+                    Good, persevering individuals get this. In any case, they likewise get that while legislators and the police should start to lead the pack in handling wrongdoing and confusion, families and networks have a section to play as well. They realize that there is a correct way for our general public - one dependent on moral duty, balance, honesty, trustworthiness, and freedom under the law. 
+                    
+                    Ask these individuals what they believe is at the base of a large number of the issues we face in the public arena today, and they will express clear things. The things numerous government officials have been too scared to even consider saying for a really long time.
+
+                </p>
+                
+            </div>
+
+        </div>
+        
+        <div id="crimestats">
+
+            <div class="header">
+
+                <h1>Crime Stats</h1>
+                <h2><i>"Facts are stubborn, but statistics are more pliable"</i> – Mark Twain</h2>
+
+            </div>
+
+            <div class="content">
+
+                <div>
+
+                    <select class="option" style="width: 250px;">
+
+                        <option style="display: none;">Choose A Scale:</option>
+                        <option value="Oone">Worldwide</option>
+                        <option value="Otwo">United Kingdom</option>
+                        <option value="Othree">London</option>
+
+                    </select>
+
+                </div>
+
+                <div class="worldwide box">You Have Chosen To View The<strong> World's Crime Statistics</strong>
+                <img src="Images/worldwide.png" alt="NotDisplayed"/>
+                </div>
+                <div class="uk box">You Have Chosen To View The<strong> United Kingdom's Crime Statistics</strong>
+                <img src="Images/uk.png" alt="NotDisplayed"/>
+                </div>
+                <div class="london box">You Have Chosen To View<strong> London's Crime Statictics</strong>
+                <img src="Images/borough.png" alt="NotDisplayed"/>
+                </div>
+
+            </div>
+
+            <script>
+
+                $(document).ready(function() {
+                    $("select").change(function() {
+                        $("select option:selected").each(function() {
+                        if ($(this).attr("value") == "Oone") {
+                            $(".box").hide();
+                            $(".worldwide").show();
+                        }
+                        if ($(this).attr("value") == "Otwo") {
+                            $(".box").hide();
+                            $(".uk").show();
+                        }
+                        if ($(this).attr("value") == "Othree") {
+                            $(".box").hide();
+                            $(".london").show();
+                        }
+                        });
+                    }).change();
+                });
+
+            </script>
+
+        </div>
+
+        <div id="crimefacts">
+
+            <div class="header">
+
+                <h1>Crime Facts</h1>
+                <h2><i>Every man has a right to his opinion, but no man has a right to be wrong in his facts"</i> - Bernard Baruch</h2>
+
+            </div>
+
+            <div id="subheader">
+
+                <h3>Crime in London</h3>
+                <p class="text">London is a huge, sprawling city made up of many boroughs, and the level of crime varies from one to another. For example, Hackney crime levels can be very different to Newham crime levels, despite the two areas being just seven miles apart. Due to its size, it’s important to break down the London crime figures to get a clearer picture of the scale of crime in your area of London.</p>
+
+            </div>
+
+            <div class="content">
+
+                <div id="contentbox1">
+                
+                    <h3>VIOLENCE AND SEXUAL OFFENCES</h3>
+
+                    <p class="text">which accounted for</p>
+                    
+                    <h3>4,660</h3>
+
+                    <p class="text">of police incidents in your area.</p>
+
+                </div>
+
+                <div id="contentbox2">
+
+                    <h3>ANTI-SOCIAL BEHAVIOUR</h3>
+
+                    <p class="text">is the second most recorded type of crime with</p>
+                        
+                    <h3>2,790</h3>
+
+                    <p class="text">occurrences, followed by</p>
+                        
+                    <h3>CRIMINAL DAMAGE AND ARSON</h3>
+
+                    <p class="text">with</p>
+                        
+                    <h3>1,663</h3>
+
+                </div>
+                
+                <div id="contentbox3">
+
+                    <h3>BURGLARIES</h3>
+                    <h3>892</h3>
+                    <p class="text">Here's the number of recorded burglaries in your area in the past month.</p>
+
+                </div>                  
+
+            </div>
+
+        </div>
+
+        <div id="socials">
+
+            <div class="header">
+
+                <h1>Socials</h1>
+                <h2><i>"Get To Talkn'"</i> - Jeffey Agyemang Duah</h2>
+
+            </div>
+
+            <div class="content">
+
+                <h2>Seen Anything Crazy? Upload An Image.</h2>
+
+                <input type="file" name="uploadedimages" id="uploadedimages">
+
+            </div>
+
+
+
+        </div>
+
+        <div id="ContactUs">
+
+            <div class="header">
+
+                <h1>Contact Us</h1>
+                <h2><i>"We're Alpha"</i> - Tyler Stienkamp</h2>
+
+            </div>
+
+            <div class="content">
+
+                <div class="socialicons">
+
+                    <a href="https://en-gb.facebook.com/" class="icon">
+                        <img src="images/facebook.png" alt="NotDisplayed">
+                    </a>	
+                    <a href="https://www.instagram.com/" class="icon">
+                        <img src="images/instagram.png" alt="NotDisplayed">
+                    </a>
+                    <a href="https://www.youtube.com/" class="icon">
+                        <img src="images/youtube.png" alt="NotDisplayed">
+                    </a>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

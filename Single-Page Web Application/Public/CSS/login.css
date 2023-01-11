@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto+Condensed&family=Zilla+Slab+Highlight&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+.container {
+    margin: auto;
+    display: inline-block;
+    top:50%;
+    left: 50%;
+    width: 440px;
+    align-self: center;
+    padding: 200px 800px;
+}
+  
+.signup,
+.login {
+    width: 50%;
+    background: #222121;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;                                                                                                                                                          
+    color: white;  
+}
+
+.signup-form, .login-form{
+    background-color:  #2727278f;
+    padding: 40px;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    height: 350px;
+}
+    
+
+#signupdetails, #logindetails, a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;                                                                                                                                                          
+    color: white;  
+}
+
+#usernamefield, #passwordfield{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;   
+    border: 1px solid #e9eaea;
+    color: #000000;
+    font-size: 14px;
+    transform: all 0.5s ease;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#loginusernamefield, #loginpasswordfield{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;   
+    border: 1px solid #e9eaea;
+    color: #000000;
+    font-size: 14px;
+    transform: all 0.5s ease;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#userloginbutton,
+#usersignupbutton {
+    margin-top: 50px;
+    width: 100%;
+    background: red;
+    height: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;                                                                                                                                                          
+    color: white;  
+} 
